@@ -27,6 +27,16 @@
     height: 30px;
     border-radius: 2rem;
 }
+.task-stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    color: #f54f6b;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
 
 .btn{
     border-radius: 1rem;
@@ -49,25 +59,24 @@
 }
 
 .input-task{
-    padding: 0.5rem 0.6rem;
+    padding: 1rem 0.6rem;
     border: none;
-    width: 500px;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 @media (max-width: 480px) {
     
     .input-task{
-        padding: 0.2rem 0.5rem;
+        padding: 1.5rem 0.5rem;
         height: 10px;
         font-size: 1.2rem;
     }
     .btn{
         width: 80px;
     }
-    .input-task-wrapper{
-        gap: rem;
+    .task-text{
+        gap: 1.5rem;
     }
 }
