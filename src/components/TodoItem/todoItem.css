@@ -10,15 +10,19 @@ ul {
     transition: all ease 1s;
 }
 
+.wrap{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+
 ul .task-lists{
     margin-bottom: 1rem;
     background: rgba(255, 255, 255, 0.315);
-    box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.12),
-    0 4px 12px rgba(0, 0, 0, 0.09);
-    min-width: 80%;
-    padding: 1rem 1rem;
-    border-radius: 3rem;
+    box-shadow: var(--box-shadow);
+    width: 95%;
+    padding: 1rem;
+    border-radius: var(--border-radius);
     transition: all ease 1s;
 }
 
@@ -30,23 +34,25 @@ ul .task-lists{
 }
 
 
-ul .task-lists:hover{
-    transform: scale(1.01);
-}
-
-
 .editing-task-wrapper input{
     width: 80%;
 }
-.task-text{
+.task-text-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
-.task-text span::first-letter{
+.task-text-wrapper span{
+    overflow-x:scroll
+}
+.task-text-wrapper .completed-task{
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+.task-text-wrapper span::first-letter{
     text-transform: capitalize;
 }
 
@@ -55,4 +61,10 @@ ul .task-lists:hover{
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
+}
+
+@media (max-width: 768px){
+    .task-text-wrapper{
+        font-size: 1rem;
+    }
 }

@@ -1,4 +1,5 @@
-import useTodo from "../stores/todoStore";
+import useTodo from "../../stores/todoStore";
+import './statsPanel.css'
 
 const StatsPanel = () => {
     const todoIds = useTodo(state => state.todoIds);

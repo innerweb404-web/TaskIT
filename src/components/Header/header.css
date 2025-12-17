@@ -1,0 +1,15 @@
+
+.header{
+    padding: 1rem;
+    color: var(--primary-color) ;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px){
+    .header{
+        font-size: 1.2rem;
+    }
+}

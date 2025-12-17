@@ -1,0 +1,21 @@
+
+
+.no-tasks{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    width: 20%;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    word-spacing: 0.5rem;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px){
+    .no-tasks{
+        width: 40%;
+        font-size: 0.8rem;
+    }
+}
