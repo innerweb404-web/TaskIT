@@ -61,7 +61,7 @@ Users need a simple, responsive Todo app that **manages tasks efficiently** with
 
 ---
 
-## 📅 Month 4 Roadmap
+## 📅 Project Roadmap
 
 | Day | Focus |
 |-----|-------|
